@@ -1,0 +1,390 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #ebebeb;
+}
+
+p {
+    font-size: 12px;
+}
+
+main h3 {
+    font-size: 24px;
+}
+
+p.price {
+    font-size: 18px;
+    width: 30%;
+}
+
+p.discount {
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+}
+
+h4.description {
+    font-size: 16px;
+    font-weight: normal;
+    display: none;
+}
+
+h3,
+h4.description,
+footer section p {
+    color: #666;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+.top-header {
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+header div.form {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+}
+
+.logo {
+    padding: 2%;
+    width: 50%
+}
+
+.top-header .form input {
+    background: white;
+    color: #666;
+    padding: 6%;
+    font-size: 10px;
+    border-radius: 6px;
+    width: 100%;
+    border: #666 solid 0.5px;
+}
+
+.top-header .form .submit {
+    text-align: center;
+    background-color: white;
+    width: 30px;
+    padding: 2%;
+    position: absolute;
+    right: 1px;
+    border-radius: 5px;
+    border: none;
+}
+
+p.center {
+    margin-top: 5%;
+    text-align: center
+}
+
+ul {
+    margin-bottom: 5%;
+}
+
+header nav div.menu {
+    font-size: 12px;
+    display: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header div.burger-menu {
+    text-align: center;
+}
+
+header div.burger-menu i {
+    background-color: #1259c3;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10%;
+    color: white
+}
+
+.banner img {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto
+}
+
+.products img {
+    width: 100%;
+
+}
+
+main section article {
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+article div.main-article {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: baseline;
+}
+
+.fas.fa-truck {
+    color: #39b54a;
+    transition: all 1000ms;
+}
+
+.fas.fa-truck:hover {
+    transform: rotate(-90deg);
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+footer {
+    background: white;
+    margin: 5px;
+    text-align: center;
+}
+
+footer section i {
+    color: #1259c3;
+    font-size: 30px;
+}
+
+footer section {
+    padding: 15%;
+}
+
+body>main>form {
+    margin: 5%;
+}
+
+main form input.form1 {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5% auto;
+    border: none;
+    padding: 2%;
+    border-radius: 8px;
+}
+
+main form label.form-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+main form div.user-prof {
+    margin: 6% auto;
+}
+
+main form div.checkbox {
+    margin: 5%
+}
+
+main button.submit {
+    background: #1259c3;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 2%;
+    color: white;
+    box-sizing: border-box;
+    margin: 3% auto;
+    transition: all 450ms
+}
+
+main button.submit:hover {
+    background-color: #0022AA;
+}
+
+main button.reset {
+    background: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 2%;
+    color: black;
+    box-sizing: border-box;
+    margin: 3% auto;
+}
+
+
+
+@media (min-width: 361px) {
+
+    body>header>div.top-header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    body>header>div>div.logo {
+        width: 30%;
+        padding: 0;
+    }
+
+    body>header>div>div.form {
+        width: 30%;
+    }
+
+    body>header>div>p.center {
+        width: 30%;
+        font-size: 0.5rem;
+        align-items: center;
+        margin-top: 0%;
+    }
+
+    body>header>div>div.form>div.input {
+        font-size: 0.5rem;
+        padding: 3%;
+    }
+
+    body>header>div>div.form>div.submit {
+        width: 15px;
+        font-size: 0.5rem;
+    }
+
+    nav div.burger-menu {
+        display: none;
+    }
+
+    header nav div.menu {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav div.menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.5rem;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+
+
+    nav div.menu ul.menu-user,
+    ul.menu-nav {
+        width: 45%;
+    }
+
+    nav div.menu ul.menu-user li a i {
+        padding: 2px;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    h4.description {
+        display: block;
+        opacity: 0;
+        font-size: 14px;
+        transition: all 500ms;
+    }
+
+    article:hover .description {
+        opacity: 1;
+    }
+
+    main section article {
+        width: 47%;
+        transition: all 500ms;
+    }
+
+    main section article:hover {
+        box-shadow: 0px 0px 10px rgb(100 100 100)
+    }
+
+    p.price,
+    p.discount {
+        width: 50%;
+        font-size: 14px;
+    }
+
+    footer section {
+        padding: 10%;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    header .top-header .center,
+    header nav div.menu ul {
+        font-size: 0.8rem;
+    }
+
+    body>header>div.top-header {
+        padding: 2%;
+    }
+
+    nav div.menu ul.menu-user,
+    ul.menu-nav {
+        width: 35%;
+    }
+
+    main section article {
+        width: 22%;
+    }
+
+    p.price {
+        font-size: 14px;
+    }
+
+    p.discount,
+    h4.description {
+        font-size: 12px;
+    }
+
+    body>footer>div.main-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer .main-footer .shop-info {
+        width: 30%;
+        padding: 3%;
+    }
+
+    footer section.copyright {
+        padding: 2%;
+        text-align: left;
+    }
+}
