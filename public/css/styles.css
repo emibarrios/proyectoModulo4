@@ -172,13 +172,19 @@ main section article i {
 
 footer {
     background: white;
-    margin: 5px;
+    margin: 0;
     text-align: center;
+    width: 100%;
 }
 
 footer section i {
     color: #1259c3;
     font-size: 30px;
+    transition: all 500ms;
+}
+
+footer section i:hover {
+    color:#39D3EB ;
 }
 
 footer section {
