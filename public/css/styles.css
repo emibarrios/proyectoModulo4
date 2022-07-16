@@ -99,6 +99,20 @@ header nav div.menu {
     display: none;
 }
 
+/* "MENU DESPLEGABLE" Ver como hacer solo en mobile
+ nav:hover .menu {
+    display: block;
+    position: absolute;
+    right: 92px;
+    top: 52px;
+    background-color: #EAC926;
+    padding: 0 7%;
+    padding-bottom: 6%;
+    border: black solid 0.5px;
+    box-shadow: #666 0.5px;
+} */
+
+
 header nav ul li a {
     text-decoration: none;
     color: black;
